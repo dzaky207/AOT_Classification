@@ -8,7 +8,7 @@ os.makedirs(output_folder, exist_ok=True)
 
 cap = cv2.VideoCapture(video_path)
 fps = cap.get(cv2.CAP_PROP_FPS)  # Dapatkan FPS video
-frame_interval = int(fps / 1)
+frame_interval = int(fps / 1) # Tentukan FPS yang ingin didapat
 frame_count = 0
 saved_frames = 0
 
